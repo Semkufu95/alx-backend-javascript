@@ -1,10 +1,10 @@
 export default function createIteratorObject(report) {
-  const allEmployees = report.allEmployees;
+  const { allEmployees } = report;
   const employeeList = [];
 
   // Safely iterate through the object properties
   for (const department in allEmployees) {
-    if (allEmployees.hasOwnProperty(department)) {
+    if (Object.prototype.hasOwnProperty.call(allEmployees, department)) {
       employeeList.push(...allEmployees[department]);
     }
   }
