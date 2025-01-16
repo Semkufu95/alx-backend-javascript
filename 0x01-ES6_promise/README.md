@@ -1,0 +1,1 @@
+This directory contains codes that are practical learning by solving tasks on JavaScript ES6 promises
